@@ -13,7 +13,7 @@ const checkBTC = () =>  {
   console.log('Chequeando el precio del bitcoin...')
   const price = getBitcoinPrice();
   console.log('El precio actual es: ',price, ' USD')
-  if (price <= 500) {
+  if (price <= buyPrice) {
     sendNotification();
   } else{
     console.log('No lo compramos por ahora...')
